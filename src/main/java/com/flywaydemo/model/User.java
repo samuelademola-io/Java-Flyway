@@ -15,15 +15,17 @@ public class User {
     private Long id;
 
     @NotBlank
-    @Column(unique = true)
+    @Column(unique = true, name = "username")
     @Size(min = 10, max = 50)
     private String username;
 
     @NotBlank
+    @Column(name = "first_name")
     @Size(max = 50)
     private String firstName;
 
     @NotBlank
+    @Column(name = "last_name")
     @Size(max = 50)
     private String lastname;
 

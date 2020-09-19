@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-//@ComponentScan("com.flywaydemo")
-//@EntityScan("com.flywaydemo.model")
+@ComponentScan("com.flywaydemo")
+@EntityScan("com.flywaydemo.model")
 public class FlywayApplication {
 
 	public static void main(String[] args) {
