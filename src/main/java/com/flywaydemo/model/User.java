@@ -8,25 +8,18 @@ import javax.validation.constraints.Size;
 import java.util.Objects;
 
 @Entity
-@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
-    @Column(unique = true, name = "username")
-    @Size(min = 10, max = 50)
+
     private String username;
 
-    @NotBlank
-    @Column(name = "first_name")
-    @Size(max = 50)
+
     private String firstName;
 
-    @NotBlank
-    @Column(name = "last_name")
-    @Size(max = 50)
+
     private String lastname;
 
     public User() { super(); }
